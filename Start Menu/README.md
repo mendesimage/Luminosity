@@ -244,7 +244,7 @@ The theme styles can also be imported manually. To do that, follow these steps:
 
 ---
 
-### Final Version (EXPRIMENTAL - EARLY ACCESS)
+### Final Version (Usable - Early Access)
 
 Reverse engineered [Fluid](https://github.com/ramensoftware/windows-11-start-menu-styling-guide/tree/main/Themes/Fluid) (All credits to [SandTechStuff](https://github.com/SandTechStuff)), applied and adapted its effects to the old Start Menu elements while I still have access to it.
 
