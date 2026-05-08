@@ -7,6 +7,14 @@ While the themes have been tested, they are not final. Expect issues, unfinished
 
 Theme JSON is up to date, but README information likely isn't!
 
+**A major update is planned:**
+- Better and clearer `README.md`
+- Major Taskbar fixes
+- Long term - Taskbar v2 with more changes and fixes
+
+However, updates will take a while; I'm not having proper time to work on it, but I'm doing it slowly... (very slowly)
+
+
 ## Credits
 <details>
 <summary>(click to expand)</summary>
