@@ -64,7 +64,7 @@ It's meant to work well on dark windows, with **Mica** or **MicaAlt** backdrops,
 ## Theme Status
 | Component                         | Version   | Status              | Notes                            |
 | --------------------------------- | --------- | ------------------- | -------------------------------- |
-| **Taskbar**                       | **1.1.1** | ✅ Stable           | Waiting Windhawk Review          |
+| **Taskbar**                       | **1.1.1** | 🔧 Work in Progress | Many issues in multiple displays |
 | **Start Menu**                    | **0.2.1** | 🔧 Work in Progress | Missing screenshots  |
 | **Notification / Control Center** | **0.1.0** | 🔧 Work in Progress | Messy code, missing styles       |
 | **File Explorer**                 | **0.1.0** | ⚠️ Heavy WIP        | Messy code, multiple issues      |
@@ -104,7 +104,7 @@ This changelog follows **[Keep a Changelog](https://keepachangelog.com/en/1.0.0/
 
 ### **[1.1.1] – Current**
 
-**Status:** Stable (On single-displays)
+**Status:** 🔧 Work in Progress
 
 **Added**
 
