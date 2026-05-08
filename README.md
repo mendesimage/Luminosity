@@ -104,7 +104,7 @@ This changelog follows **[Keep a Changelog](https://keepachangelog.com/en/1.0.0/
 
 ### **[1.1.1] – Current**
 
-**Status:** Stable
+**Status:** Stable (On single-displays)
 
 **Added**
 
@@ -113,6 +113,11 @@ N/A
 **Fixed**
 
 - `MultiWindowElement` looking weird on 25h2. (I suppose)
+
+**Known Issues**
+
+* Multiple issues related to multiple displays setups. Version available at [ramensoftware's Repository](https://github.com/ramensoftware/windows-11-taskbar-styling-guide/tree/main/Themes/Luminosity) is more stable.
+  I'll try to provide the fixes sometime in May or June.
 
 ---
 
