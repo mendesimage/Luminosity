@@ -7,13 +7,51 @@ While the themes have been tested, they are not final. Expect issues, unfinished
 
 Theme JSON is up to date, but README information likely isn't!
 
-**A major update is planned:**
-- Better and clearer `README.md`
-- Major Taskbar fixes
-- Long term - Taskbar v2 with more changes and fixes
+## ✨ Luminosity Taskbar 1.2 ✨
+<details>
+<summary>(click to expand)</summary>
+	
+### General Changes:
 
-However, updates will take a while; I'm not having proper time to work on it, but I'm doing it slowly... (very slowly)
+- Multiple `TaskbarFrame` fixes by [**m417z**](https://github.com/m417z)
+    - Now compatible with multiple taskbar setups!! (multiple displays)
+- Fixed missing Background in some elements
+- Better documentation and guides
+- Better settings; easier to change thingies
+- Revamped Task View and Alt+Tab
+    - New visuals (inside limitations)
+    - Better Virtual Desktops bar width behavior
+- Hover effects from [Fluid](https://github.com/ramensoftware/windows-11-start-menu-styling-guide/tree/main/Themes/Fluid) on Window Preview buttons
+- `SystemTray` fixes and simplification
+- Reorganized some target placment
+- Specified some vague targets
+- Overflow icon now have styling
+- Removed gap between widget and taskbar icons for extra space
+    - Can be disabled
+    - Not available for Classic variant by default
+- Restored Snap Layouts Bar position to make the top more accessible
+- Basic styling to Input Switcher
+    - Couldn’t find targets to make buttons rounded as well
 
+**Dock**
+
+- Neat top gap idea I got from a [Reddit post from u/OCometa](https://www.reddit.com/r/Windhawk/comments/1t3x8n9/how_can_i_nudge_the_taskbar_a_few_pixels_down_or/) to better separate maximized window and dock
+- Added a small gap between taskbar icons and system tray to access Right-Click Menu.
+
+### What’s Next?
+
+Updates will take a long while now, as I need to focus on work. I’m planning a revamp for this `README.md` to make things easier to navigate through and maintain.
+
+After that I’ll move toward Taskbar v2 and finish support for the old Start Menu while I still have access to it. The idea for v2 is bringing more changes, and options that users can just drop into the `yaml` after the main code. Some planned optional ideas are:
+
+- Bigger window previews
+- Bigger buttons for various things
+- Task View and Alt+Tab variations
+
+Some ideas are still theoretical/experimental and might not even be possible because of unknown limitations.
+
+Occasionally I might also revisit Notification Center, since it currently doesn’t fully match the rest of the theme pack visually and needs some fixes/improvements. I'm keeping the older version of Luminosity's Start Menu since it better match with the current Notification Center.
+</details>
 
 ## Credits
 <details>
@@ -72,7 +110,7 @@ It's meant to work well on dark windows, with **Mica** or **MicaAlt** backdrops,
 ## Theme Status
 | Component                         | Version   | Status              | Notes                            |
 | --------------------------------- | --------- | ------------------- | -------------------------------- |
-| **Taskbar**                       | **1.1.1** | 🔧 Work in Progress | Many issues in multiple displays |
+| **Taskbar**                       | **1.2** |  |  |
 | **Start Menu**                    | **0.2.1** | 🔧 Work in Progress | Missing screenshots  |
 | **Notification / Control Center** | **0.1.0** | 🔧 Work in Progress | Messy code, missing styles       |
 | **File Explorer**                 | **0.1.0** | ⚠️ Heavy WIP        | Messy code, multiple issues      |
@@ -110,22 +148,21 @@ This changelog follows **[Keep a Changelog](https://keepachangelog.com/en/1.0.0/
 
 ## **Taskbar**
 
-### **[1.1.1] – Current**
+### **[1.2] – Current**
 
 **Status:** 🔧 Work in Progress
 
 **Added**
 
-N/A
+Refer to top of the page
 
 **Fixed**
 
-- `MultiWindowElement` looking weird on 25h2. (I suppose)
+Refer to top of the page
 
 **Known Issues**
 
-* Multiple issues related to multiple displays setups. Version available at [ramensoftware's Repository](https://github.com/ramensoftware/windows-11-taskbar-styling-guide/tree/main/Themes/Luminosity) is more stable.
-  I'll try to provide the fixes sometime in May or June.
+N/A
 
 ---
 
