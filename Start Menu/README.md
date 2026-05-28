@@ -229,7 +229,7 @@ Reverse engineered [Fluid](https://github.com/ramensoftware/windows-11-start-men
 It should work in both Start Menu versions.
 
 **Known Issues**
-- Missing many styling in many small elements (redesigned Start menu](https://microsoft.design/articles/start-fresh-redesigning-windows-start-menu/)
+- Missing changes in many small elements (redesigned Start menu)
 
 Let me know of any issues.
 
