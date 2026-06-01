@@ -28,261 +28,237 @@ The theme changes the following elements:
 
 ---
 
-## Full Luminosity Theme
-
-For that, download the listed mods and select "**Luminosity**" on each.
-- Windows 11 Taskbar Styler
-- Windows 11 Start Menu Styler
-- Windows 11 Notification Center Styler
-- Windows 11 File Explorer Styler
-
-I also highly recommend **Translucent Windows** with **Mica** or **MicaAlt** selected as backdrop.
-
----
-
-## Theme selection
-
-The theme is integrated into the mod and can simply be selected from the mod's
-settings:
-
-* Open the Windows 11 Taskbar Styler mod in Windhawk.
-* Go to the "Settings" tab.
-* Select the theme and save the settings.
-
 ## Manual installation
 
 The theme styles can also be imported manually. To do that, follow these steps:
 
 * Open the Windows 11 Taskbar Styler mod in Windhawk.
-* Go to the "Advanced" tab.
-* Copy the content below to the text box under "Mod settings" and click "Save".
+* Go to the "Settings" tab and select "Textual mode".
+* Copy the content below to the text box and click "Save settings".
 
 <details>
 <summary>Content to import (click to expand)</summary>
 
-```json
-{ 
-  "controlStyles[0].target": "Grid#NotificationCenterGrid",
-  "controlStyles[0].styles[0]": "Background:=$mbg",
-  "controlStyles[0].styles[1]": "CornerRadius=$wcr",
-  "controlStyles[0].styles[2]": "BorderThickness=$bt",
-  "controlStyles[0].styles[3]": "BorderBrush=$bb",
-  "controlStyles[0].styles[4]": "Shadow:=",
-
-  "controlStyles[1].target": "Grid#NotificationCenterTopBanner",
-  "controlStyles[1].styles[0]": "CornerRadius=$wcr",
-  "controlStyles[1].styles[1]": "Margin=5,6,5,0",
-
-  "controlStyles[2].target": "Windows.UI.Xaml.Controls.Grid#RootGrid > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter",
-  "controlStyles[2].styles[0]": "CornerRadius=18",
-  "controlStyles[2].styles[1]": "Margin=0,0,0,0",
-
-  "controlStyles[3].target": "Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.Border#ItemOpaquePlating",
-  "controlStyles[3].styles[0]": "CornerRadius=$mcr",
-  "controlStyles[3].styles[1]": "BorderBrush:=$t",
-  "controlStyles[3].styles[2]": "Shadow:=",  
-
-  "controlStyles[4].target": "Grid#CalendarCenterGrid",
-  "controlStyles[4].styles[0]": "Background:=$mbg",
-  "controlStyles[4].styles[1]": "CornerRadius=$wcr",
-  "controlStyles[4].styles[2]": "BorderThickness=$bt",
-  "controlStyles[4].styles[3]": "BorderBrush=$bb",
-  "controlStyles[4].styles[4]": "Shadow:=",
-
-  "controlStyles[5].target": "ScrollViewer#CalendarControlScrollViewer",
-  "controlStyles[5].styles[0]": "Background:=$t",
-  "controlStyles[5].styles[1]": "BorderBrush:=$t",
-
-  "controlStyles[6].target": "Border#CalendarHeaderMinimizedOverlay",
-  "controlStyles[6].styles[0]": "Background:=$t",
-
-  "controlStyles[7].target": "ActionCenter.FocusSessionControl#FocusSessionControl > Grid#FocusGrid",
-  "controlStyles[7].styles[0]": "Background:=$t",
-  "controlStyles[7].styles[1]": "BorderBrush:=$t",
-
-  "controlStyles[8].target": "Windows.UI.Xaml.Controls.Grid#ControlCenterRegion",
-  "controlStyles[8].styles[0]": "Background:=$mbg",
-  "controlStyles[8].styles[1]": "CornerRadius=$wcr",
-  "controlStyles[8].styles[2]": "BorderThickness=$bt",
-  "controlStyles[8].styles[3]": "BorderBrush=$bb",
-  "controlStyles[8].styles[4]": "Shadow:=",
-
-  "controlStyles[9].target": "ScrollViewer#ListContent",
-  "controlStyles[9].styles[0]": "Background:=$t",
-  "controlStyles[9].styles[1]": "BorderBrush:=$t",
-
-  "controlStyles[10].target": "Windows.UI.Xaml.Controls.Grid#L1Grid > Border",
-  "controlStyles[10].styles[0]": "Background:=$t",
-  "controlStyles[10].styles[1]": "BorderBrush:=$t",
-
-  "controlStyles[11].target": "Windows.UI.Xaml.Controls.ContentPresenter",
-  "controlStyles[11].styles[0]": "CornerRadius=$bcr",
-
-  "controlStyles[12].target": "Windows.UI.Xaml.Controls.Primitives.Thumb#HorizontalThumb > Windows.UI.Xaml.Controls.Border",
-  "controlStyles[12].styles[0]": "Background:= <AcrylicBrush TintColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" FallbackColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" TintOpacity=\"0.5\" TintLuminosityOpacity=\"1.0\" Opacity=\"1\"/>",
-
-
-  "controlStyles[13].target": "Grid#MediaTransportControlsRegion",
-  "controlStyles[13].styles[0]": "Background:=$mbg",
-  "controlStyles[13].styles[1]": "CornerRadius=$wcr",
-  "controlStyles[13].styles[2]": "BorderThickness=$bt",
-  "controlStyles[13].styles[3]": "BorderBrush=$bb",
-  "controlStyles[13].styles[4]": "Height=470",  
-  "controlStyles[13].styles[5]": "Shadow:=",
-
-
-  "controlStyles[14].target": "Windows.UI.Xaml.Controls.Grid#MediaTransportControlsRegion",
-  "controlStyles[14].styles[0]": "Height=470",
-
-  "controlStyles[15].target": "Windows.UI.Xaml.Controls.Grid#AlbumTextAndArtContainer",
-  "controlStyles[15].styles[0]": "Height=347",
-
-  "controlStyles[16].target": "Windows.UI.Xaml.Controls.Grid#ThumbnailImage",
-  "controlStyles[16].styles[0]": "Width=300",
-  "controlStyles[16].styles[1]": "Height=300",
-  "controlStyles[16].styles[2]": "HorizontalAlignment=Center",
-  "controlStyles[16].styles[3]": "VerticalAlignment=Top",
-  "controlStyles[16].styles[4]": "Grid.Column=1",
-  "controlStyles[16].styles[5]": "Margin=0,2,0,0",
-
-  "controlStyles[17].target": "Windows.UI.Xaml.Controls.Grid#ThumbnailImage > Windows.UI.Xaml.Controls.Border",
-  "controlStyles[17].styles[0]": "CornerRadius=10",
-
-  "controlStyles[18].target": "Windows.UI.Xaml.Controls.StackPanel#PrimaryAndSecondaryTextContainer",
-  "controlStyles[18].styles[0]": "VerticalAlignment=Bottom",
-  "controlStyles[18].styles[1]": "Grid.Column=0",
-
-  "controlStyles[19].target": "Windows.UI.Xaml.Controls.StackPanel#PrimaryAndSecondaryTextContainer > Windows.UI.Xaml.Controls.TextBlock#TitleText",
-  "controlStyles[19].styles[0]": "TextAlignment=Center",
-
-  "controlStyles[20].target": "Windows.UI.Xaml.Controls.StackPanel#PrimaryAndSecondaryTextContainer > Windows.UI.Xaml.Controls.TextBlock#SubtitleText",
-  "controlStyles[20].styles[0]": "TextAlignment=Center",
-
-  "controlStyles[21].target": "Grid#MediaTransportControlsRoot",
-  "controlStyles[21].styles[0]": "Background:=<SolidColorBrush Color=\"Transparent\"/>",
-
-  "controlStyles[22].target": "MenuFlyoutPresenter",
-  "controlStyles[22].styles[0]": "CornerRadius:=$mcr",
-  "controlStyles[22].styles[1]": "BorderThickness:=$bt",
-  "controlStyles[22].styles[2]": "BorderBrush:=$bb",
-  "controlStyles[22].styles[3]": "Shadow:=",
-
-  "controlStyles[23].target": "Border#JumpListRestyledAcrylic",
-  "controlStyles[23].styles[0]": "Background:=$mbg",
-  "controlStyles[23].styles[1]": "CornerRadius:=$mcr",
-  "controlStyles[23].styles[2]": "BorderThickness=$bt",
-  "controlStyles[23].styles[3]": "BorderBrush=$bb",
-  "controlStyles[23].styles[4]": "Shadow:=",
-
-  "controlStyles[24].target": "Border#ToastBackgroundBorder2",
-  "controlStyles[24].styles[0]": "Background:=$mbg",
-  "controlStyles[24].styles[1]": "CornerRadius=$wcr",
-  "controlStyles[24].styles[2]": "Shadow:=",
-
-  "controlStyles[25].target": "Windows.UI.Xaml.Controls.ToolTip > Windows.UI.Xaml.Controls.ContentPresenter#LayoutRoot",
-  "controlStyles[25].styles[0]": "Background:=$mbg",
-  "controlStyles[25].styles[1]": "CornerRadius=13",
-  "controlStyles[25].styles[2]": "BorderThickness=$bt",
-  "controlStyles[25].styles[3]": "BorderBrush=$bb",
-  "controlStyles[25].styles[4]": "Shadow:=",
-
-  "controlStyles[26].target": "Windows.UI.Xaml.Controls.Grid#FooterGrid",
-  "controlStyles[26].styles[0]": "BorderBrush:=$t",
-
-  "controlStyles[27].target": "ActionCenter.MultiLineTextBox#Edit",
-  "controlStyles[27].styles[0]": "CornerRadius=$bcr",
-
-  "controlStyles[28].target": "Windows.UI.Xaml.Controls.MenuFlyoutItem",
-  "controlStyles[28].styles[0]": "CornerRadius=$bcr",
-
-  "controlStyles[29].target": "Windows.UI.Xaml.Controls.MenuFlyoutSubItem",
-  "controlStyles[29].styles[0]": "CornerRadius=$bcr",
-
-  "controlStyles[30].target": "Windows.UI.Xaml.Controls.ListViewItem",
-  "controlStyles[30].styles[0]": "CornerRadius=$bcr",
-
-  "controlStyles[31].target": "Windows.UI.Xaml.Controls.ContentPresenter#PageHeader",
-  "controlStyles[31].styles[0]": "Background:=$t",
-
-  "controlStyles[32].target": "Windows.UI.Xaml.Controls.ContentPresenter > Windows.UI.Xaml.Controls.Border",
-  "controlStyles[32].styles[0]": "BorderBrush:=$t",
-
-  "controlStyles[33].target": "Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter#Root > Border",
-  "controlStyles[33].styles[0]": "CornerRadius=$bcr",
-
-  "controlStyles[34].target": "Windows.UI.Xaml.Controls.Primitives.RepeatButton#PreviousButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter@CommonStates",
-  "controlStyles[34].styles[0]": "Background@Normal:=$mbt",
-  "controlStyles[34].styles[1]": "Background@PointerOver:=$mbth",
-  "controlStyles[34].styles[2]": "Background@Pressed:=$mbtp",
-  "controlStyles[34].styles[3]": "RenderTransform:=<TranslateTransform X=\"15\" Y=\"0\" />",
-  "controlStyles[34].styles[4]": "BorderBrush=$bbb",
-  "controlStyles[34].styles[5]": "BorderThickness@Normal=$bt",
-  "controlStyles[34].styles[6]": "BorderThickness@PointerOver=$bt",
-  "controlStyles[34].styles[7]": "BorderThickness@Pressed=$bt",
-
-  "controlStyles[35].target": "Windows.UI.Xaml.Controls.Button#PlayPauseButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter@CommonStates",
-  "controlStyles[35].styles[0]": "Background@Normal:=$mbt",
-  "controlStyles[35].styles[1]": "Background@PointerOver:=$mbth",
-  "controlStyles[35].styles[2]": "Background@Pressed:=$mbtp",
-  "controlStyles[35].styles[3]": "Width=110",
-  "controlStyles[35].styles[4]": "BorderBrush=$bbb",
-  "controlStyles[35].styles[5]": "BorderThickness@Normal=$bt",
-  "controlStyles[35].styles[6]": "BorderThickness@PointerOver=$bt",
-  "controlStyles[35].styles[7]": "BorderThickness@Pressed=$bt",
-
-  "controlStyles[36].target": "Windows.UI.Xaml.Controls.Primitives.RepeatButton#NextButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter@CommonStates",
-  "controlStyles[36].styles[0]": "Background@Normal:=$mbt",
-  "controlStyles[36].styles[1]": "Background@PointerOver:=$mbth",
-  "controlStyles[36].styles[2]": "Background@Pressed:=$mbtp",
-  "controlStyles[36].styles[3]": "RenderTransform:=<TranslateTransform X=\"-15\" Y=\"0\" />",
-  "controlStyles[36].styles[4]": "BorderBrush=$bbb",
-  "controlStyles[36].styles[5]": "BorderThickness@Normal=$bt",
-  "controlStyles[36].styles[6]": "BorderThickness@PointerOver=$bt",
-  "controlStyles[36].styles[7]": "BorderThickness@Pressed=$bt",
-  
-  "controlStyles[37].target": "Windows.UI.Xaml.Shapes.Rectangle#HorizontalTrackRect",
-  "controlStyles[37].styles[0]": "Fill:=$bbb",
-
-  "controlStyles[38].target": "MenuFlyoutPresenter > Border",
-  "controlStyles[38].styles[0]": "Background:=$mbg",
-
-  "controlStyles[39].target": "ScrollViewer#MenuFlyoutPresenterScrollViewer > Border > Grid > ScrollContentPresenter > ItemsPresenter > StackPanel",
-  "controlStyles[39].styles[0]": "ChildrenTransitions:=<TransitionCollection><EntranceThemeTransition IsStaggeringEnabled=\"True\" FromHorizontalOffset=\"-50\" FromVerticalOffset=\"50\" /></TransitionCollection>",
-  "controlStyles[40].target": "Windows.UI.Xaml..Controls.Grid#JumpListGrid > Windows.UI.Xaml.Controls.Grid#SystemItemsContainer > Windows.UI.Xaml.Controls.Border > JumpViewUI.SystemItemListView#SystemItemList > Windows.UI.Xaml.Controls.StackPanel",
-  "controlStyles[40].styles[0]": "ChildrenTransitions:=<TransitionCollection><EntranceThemeTransition IsStaggeringEnabled=\"True\" FromHorizontalOffset=\"-50\" FromVerticalOffset=\"50\" /></TransitionCollection>",
-  "controlStyles[41].target": "Grid#LayoutRoot",
-  "controlStyles[41].styles[0]": "BackgroundTransition:=<BrushTransition Duration=\"0:0:0.100\" />",
-  "controlStyles[42].target": "Border#BackgroundBorder",
-  "controlStyles[42].styles[0]": "BackgroundTransition:=<BrushTransition Duration=\"0:0:0.100\" />",
-
-  "controlStyles[43].target": "Border#BackgroundBorder",
-  "controlStyles[43].styles[0]": "BackgroundTransition:=<BrushTransition Duration=\"0:0:0.100\" />",
-
-  "controlStyles[44].target": "Border#BackgroundBorder",
-  "controlStyles[44].styles[0]": "BackgroundTransition:=<BrushTransition Duration=\"0:0:0.100\" />",
-
-  "controlStyles[45].target": "Windows.UI.Xaml.Controls.Grid#FocusGrid",
-  "controlStyles[45].styles[0]": "Background:=$t",
-  "controlStyles[45].styles[1]": "BorderBrush:=$t",
-
-  "controlStyles[46].target": "ControlCenter.ControlCenterView#ControlCenterView > Windows.UI.Xaml.Controls.Grid#RootGrid > Windows.UI.Xaml.Controls.Border#RootGridBorder > Windows.UI.Xaml.Controls.Grid#L1Grid > Windows.UI.Xaml.Controls.Border > Windows.UI.Xaml.Controls.ContentControl#TogglesGroup > Windows.UI.Xaml.Controls.ContentPresenter > ControlCenter.PaginatedGridView > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.GridView#RootGridView > Windows.UI.Xaml.Controls.Border > Windows.UI.Xaml.Controls.ScrollViewer#ScrollViewer > Windows.UI.Xaml.Controls.Border#Root > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.ScrollContentPresenter#ScrollContentPresenter > Windows.UI.Xaml.Controls.ItemsPresenter",
-  "controlStyles[46].styles[0]": "Height=50",
-
-
-
-
-  "styleConstants[0]": "mbg=<AcrylicBrush TintColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" FallbackColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" TintOpacity=\"0.0\" TintLuminosityOpacity=\"1.0\" Opacity=\"1\"/>",
-  "styleConstants[1]": "bcr=10",
-  "styleConstants[2]": "bbb=#13FFFFFF",
-  "styleConstants[3]": "wcr=20",
-  "styleConstants[4]": "mcr=15",
-  "styleConstants[5]": "t=Transparent",
-  "styleConstants[6]": "bb=#20FFFFFF",
-  "styleConstants[7]": "bt=1",
-  "styleConstants[8]": "mbt=#10FFFFFF",
-  "styleConstants[9]": "mbth=#15FFFFFF",
-  "styleConstants[10]": "mbtp=#15FFFFFF"
-}
+```yaml
+styleConstants:
+  - mbg=<WindhawkBlur BlurAmount="30" TintColor="{ThemeResource CardStrokeColorDefaultSolid}" TintOpacity="0.0" TintLuminosityOpacity="1.0" TintSaturation="1.0" NoiseDensity="1.0" NoiseOpacity="0.1" />
+  - bcr=10
+  - bbb=#13FFFFFF
+  - wcr=20
+  - mcr=15
+  - t=Transparent
+  - bb=#20FFFFFF
+  - bt=1
+  - mbt=#10FFFFFF
+  - mbth=#15FFFFFF
+  - mbtp=#15FFFFFF
+controlStyles:
+  - target: Grid#NotificationCenterGrid
+    styles:
+      - Background:=$mbg
+      - CornerRadius=$wcr
+      - BorderThickness=$bt
+      - BorderBrush=$bb
+      - Shadow:=
+  - target: Grid#NotificationCenterTopBanner
+    styles:
+      - CornerRadius=$wcr
+      - Margin=5,6,5,0
+  - target: Windows.UI.Xaml.Controls.Grid#RootGrid > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter
+    styles:
+      - CornerRadius=18
+      - Margin=0,0,0,0
+  - target: Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.Border#ItemOpaquePlating
+    styles:
+      - CornerRadius=$mcr
+      - BorderBrush:=$t
+      - Shadow:=
+  - target: Grid#CalendarCenterGrid
+    styles:
+      - Background:=$mbg
+      - CornerRadius=$wcr
+      - BorderThickness=$bt
+      - BorderBrush=$bb
+      - Shadow:=
+  - target: ScrollViewer#CalendarControlScrollViewer
+    styles:
+      - Background:=$t
+      - BorderBrush:=$t
+  - target: Border#CalendarHeaderMinimizedOverlay
+    styles:
+      - Background:=$t
+  - target: ActionCenter.FocusSessionControl#FocusSessionControl > Grid#FocusGrid
+    styles:
+      - Background:=$t
+      - BorderBrush:=$t
+  - target: Windows.UI.Xaml.Controls.Grid#ControlCenterRegion
+    styles:
+      - Background:=$mbg
+      - CornerRadius=$wcr
+      - BorderThickness=$bt
+      - BorderBrush=$bb
+      - Shadow:=
+  - target: ScrollViewer#ListContent
+    styles:
+      - Background:=$t
+      - BorderBrush:=$t
+  - target: Windows.UI.Xaml.Controls.Grid#L1Grid > Border
+    styles:
+      - Background:=$t
+      - BorderBrush:=$t
+  - target: Windows.UI.Xaml.Controls.ContentPresenter
+    styles:
+      - CornerRadius=$bcr
+  - target: Windows.UI.Xaml.Controls.Primitives.Thumb#HorizontalThumb > Windows.UI.Xaml.Controls.Border
+    styles:
+      - Background:= <AcrylicBrush TintColor="{ThemeResource CardStrokeColorDefaultSolid}" FallbackColor="{ThemeResource CardStrokeColorDefaultSolid}" TintOpacity="0.5" TintLuminosityOpacity="1.0" Opacity="1"/>
+  - target: Grid#MediaTransportControlsRegion
+    styles:
+      - Background:=$mbg
+      - CornerRadius=$wcr
+      - BorderThickness=$bt
+      - BorderBrush=$bb
+      - Height=470
+      - Shadow:=
+  - target: Windows.UI.Xaml.Controls.Grid#MediaTransportControlsRegion
+    styles:
+      - Height=470
+  - target: Windows.UI.Xaml.Controls.Grid#AlbumTextAndArtContainer
+    styles:
+      - Height=347
+  - target: Windows.UI.Xaml.Controls.Grid#ThumbnailImage
+    styles:
+      - Width=300
+      - Height=300
+      - HorizontalAlignment=Center
+      - VerticalAlignment=Top
+      - Grid.Column=1
+      - Margin=0,2,0,0
+  - target: Windows.UI.Xaml.Controls.Grid#ThumbnailImage > Windows.UI.Xaml.Controls.Border
+    styles:
+      - CornerRadius=10
+  - target: Windows.UI.Xaml.Controls.StackPanel#PrimaryAndSecondaryTextContainer
+    styles:
+      - VerticalAlignment=Bottom
+      - Grid.Column=0
+  - target: Windows.UI.Xaml.Controls.StackPanel#PrimaryAndSecondaryTextContainer > Windows.UI.Xaml.Controls.TextBlock#TitleText
+    styles:
+      - TextAlignment=Center
+  - target: Windows.UI.Xaml.Controls.StackPanel#PrimaryAndSecondaryTextContainer > Windows.UI.Xaml.Controls.TextBlock#SubtitleText
+    styles:
+      - TextAlignment=Center
+  - target: Grid#MediaTransportControlsRoot
+    styles:
+      - Background:=<SolidColorBrush Color="Transparent"/>
+  - target: MenuFlyoutPresenter
+    styles:
+      - CornerRadius:=$mcr
+      - BorderThickness:=$bt
+      - BorderBrush:=$bb
+      - Shadow:=
+  - target: Border#JumpListRestyledAcrylic
+    styles:
+      - Background:=$mbg
+      - CornerRadius:=$mcr
+      - BorderThickness=$bt
+      - BorderBrush=$bb
+      - Shadow:=
+  - target: Border#ToastBackgroundBorder2
+    styles:
+      - Background:=$mbg
+      - CornerRadius=$wcr
+      - Shadow:=
+  - target: Windows.UI.Xaml.Controls.ToolTip > Windows.UI.Xaml.Controls.ContentPresenter#LayoutRoot
+    styles:
+      - Background:=$mbg
+      - CornerRadius=13
+      - BorderThickness=$bt
+      - BorderBrush=$bb
+      - Shadow:=
+  - target: Windows.UI.Xaml.Controls.Grid#FooterGrid
+    styles:
+      - BorderBrush:=$t
+  - target: ActionCenter.MultiLineTextBox#Edit
+    styles:
+      - CornerRadius=$bcr
+  - target: Windows.UI.Xaml.Controls.MenuFlyoutItem
+    styles:
+      - CornerRadius=$bcr
+  - target: Windows.UI.Xaml.Controls.MenuFlyoutSubItem
+    styles:
+      - CornerRadius=$bcr
+  - target: Windows.UI.Xaml.Controls.ListViewItem
+    styles:
+      - CornerRadius=$bcr
+  - target: Windows.UI.Xaml.Controls.ContentPresenter#PageHeader
+    styles:
+      - Background:=$t
+  - target: Windows.UI.Xaml.Controls.ContentPresenter > Windows.UI.Xaml.Controls.Border
+    styles:
+      - BorderBrush:=$t
+  - target: Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter#Root > Border
+    styles:
+      - CornerRadius=$bcr
+  - target: Windows.UI.Xaml.Controls.Primitives.RepeatButton#PreviousButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter@CommonStates
+    styles:
+      - Background@Normal:=$mbt
+      - Background@PointerOver:=$mbth
+      - Background@Pressed:=$mbtp
+      - RenderTransform:=<TranslateTransform X="15" Y="0" />
+      - BorderBrush=$bbb
+      - BorderThickness@Normal=$bt
+      - BorderThickness@PointerOver=$bt
+      - BorderThickness@Pressed=$bt
+  - target: Windows.UI.Xaml.Controls.Button#PlayPauseButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter@CommonStates
+    styles:
+      - Background@Normal:=$mbt
+      - Background@PointerOver:=$mbth
+      - Background@Pressed:=$mbtp
+      - Width=110
+      - BorderBrush=$bbb
+      - BorderThickness@Normal=$bt
+      - BorderThickness@PointerOver=$bt
+      - BorderThickness@Pressed=$bt
+  - target: Windows.UI.Xaml.Controls.Primitives.RepeatButton#NextButton > Windows.UI.Xaml.Controls.ContentPresenter#ContentPresenter@CommonStates
+    styles:
+      - Background@Normal:=$mbt
+      - Background@PointerOver:=$mbth
+      - Background@Pressed:=$mbtp
+      - RenderTransform:=<TranslateTransform X="-15" Y="0" />
+      - BorderBrush=$bbb
+      - BorderThickness@Normal=$bt
+      - BorderThickness@PointerOver=$bt
+      - BorderThickness@Pressed=$bt
+  - target: Windows.UI.Xaml.Shapes.Rectangle#HorizontalTrackRect
+    styles:
+      - Fill:=$bbb
+  - target: MenuFlyoutPresenter > Border
+    styles:
+      - Background:=$mbg
+  - target: ScrollViewer#MenuFlyoutPresenterScrollViewer > Border > Grid > ScrollContentPresenter > ItemsPresenter > StackPanel
+    styles:
+      - ChildrenTransitions:=<TransitionCollection><EntranceThemeTransition IsStaggeringEnabled="True" FromHorizontalOffset="-50" FromVerticalOffset="50" /></TransitionCollection>
+  - target: Windows.UI.Xaml..Controls.Grid#JumpListGrid > Windows.UI.Xaml.Controls.Grid#SystemItemsContainer > Windows.UI.Xaml.Controls.Border > JumpViewUI.SystemItemListView#SystemItemList > Windows.UI.Xaml.Controls.StackPanel
+    styles:
+      - ChildrenTransitions:=<TransitionCollection><EntranceThemeTransition IsStaggeringEnabled="True" FromHorizontalOffset="-50" FromVerticalOffset="50" /></TransitionCollection>
+  - target: Grid#LayoutRoot
+    styles:
+      - BackgroundTransition:=<BrushTransition Duration="0:0:0.100" />
+  - target: Border#BackgroundBorder
+    styles:
+      - BackgroundTransition:=<BrushTransition Duration="0:0:0.100" />
+  - target: Border#BackgroundBorder
+    styles:
+      - BackgroundTransition:=<BrushTransition Duration="0:0:0.100" />
+  - target: Border#BackgroundBorder
+    styles:
+      - BackgroundTransition:=<BrushTransition Duration="0:0:0.100" />
+  - target: Windows.UI.Xaml.Controls.Grid#FocusGrid
+    styles:
+      - Background:=$t
+      - BorderBrush:=$t
+  - target: ControlCenter.ControlCenterView#ControlCenterView > Windows.UI.Xaml.Controls.Grid#RootGrid > Windows.UI.Xaml.Controls.Border#RootGridBorder > Windows.UI.Xaml.Controls.Grid#L1Grid > Windows.UI.Xaml.Controls.Border > Windows.UI.Xaml.Controls.ContentControl#TogglesGroup > Windows.UI.Xaml.Controls.ContentPresenter > ControlCenter.PaginatedGridView > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.GridView#RootGridView > Windows.UI.Xaml.Controls.Border > Windows.UI.Xaml.Controls.ScrollViewer#ScrollViewer > Windows.UI.Xaml.Controls.Border#Root > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.ScrollContentPresenter#ScrollContentPresenter > Windows.UI.Xaml.Controls.ItemsPresenter
+    styles:
+      - Height=50
 ```
-
 </details>
