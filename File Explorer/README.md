@@ -50,134 +50,165 @@ I also highly recommend **Translucent Windows** with **Mica** or **MicaAlt** sel
 
 ---
 
-## Theme selection
-
-The theme is integrated into the mod and can simply be selected from the mod's
-settings:
-
-* Open the Windows 11 Taskbar Styler mod in Windhawk.
-* Go to the "Settings" tab.
-* Select the theme and save the settings.
-
 ## Manual installation
 
 The theme styles can also be imported manually. To do that, follow these steps:
 
 * Open the Windows 11 Taskbar Styler mod in Windhawk.
-* Go to the "Advanced" tab.
-* Copy the content below to the text box under "Mod settings" and click "Save".
+* Go to the "Settings" tab and select "Textual mode".
+* Copy the content below to the text box and click "Save settings".
 
 <details>
 <summary>Content to import (click to expand)</summary>
 
-```json
- {
-  "controlStyles[0].target": "TabViewItem > Grid#LayoutRoot",
-  "controlStyles[0].styles[0]": "CornerRadius=10",
-  "controlStyles[1].target": "Button#AddButton",
-  "controlStyles[1].styles[0]": "RenderTransform:=<TranslateTransform X=\"0\" Y=\"-1\" />",
-  "controlStyles[2].target": "Microsoft.UI.Xaml.Controls.Border#BottomBorderLine",
-  "controlStyles[2].styles[0]": "Visibility=Collapsed",
-  "controlStyles[3].target": "Grid#TabContainerGrid > Border#LeftBottomBorderLine",
-  "controlStyles[3].styles[0]": "Visibility=Collapsed",
-  "controlStyles[4].target": "Grid#TabContainerGrid > Border#RightBottomBorderLine",
-  "controlStyles[4].styles[0]": "Visibility=Collapsed",
-  "controlStyles[5].target": "Microsoft.UI.Xaml.Controls.Grid#NavigationBarControlGrid",
-  "controlStyles[5].styles[0]": "Background:=$t",
-  "controlStyles[6].target": "Microsoft.UI.Xaml.Controls.Grid#PART_LayoutRoot",
-  "controlStyles[7].target": "Microsoft.UI.Xaml.Controls.AutoSuggestBox#FileExplorerSearchBox > Microsoft.UI.Xaml.Controls.Grid#LayoutRoot > Microsoft.UI.Xaml.Controls.TextBox#TextBox",
-  "controlStyles[8].target": "Microsoft.UI.Xaml.Controls.Grid#CommandBarControlRootGrid",
-  "controlStyles[8].styles[0]": "Background:=$t",
-  "controlStyles[8].styles[1]": "BorderBrush:=$t",
-  "controlStyles[9].target": "Microsoft.UI.Xaml.Controls.CommandBar#FileExplorerCommandBar",
-  "controlStyles[9].styles[0]": "Background:=$t",
-  "controlStyles[9].styles[1]": "RenderTransform:=<TranslateTransform X=\"0\" Y=\"-10\" />",
-  "controlStyles[9].styles[2]": "HorizontalAlignment=Center",
-  "controlStyles[10].target": "Microsoft.UI.Xaml.Controls.CommandBar#FileExplorerSecondaryCommandBar > Microsoft.UI.Xaml.Controls.Grid#LayoutRoot > Microsoft.UI.Xaml.Controls.Grid#ContentRoot",
-  "controlStyles[10].styles[0]": "Visibility=Collapsed",
-  "controlStyles[11].target": "Microsoft.UI.Xaml.Controls.Grid#HomeViewRootGrid",
-  "controlStyles[11].styles[0]": "Background:=$t",
-  "controlStyles[12].target": "FileExplorerExtensions.GalleryViewControl - GalleryViewControl",
-  "controlStyles[12].styles[0]": "Visibility=Collapsed",
-  "controlStyles[13].target": "FileExplorerExtensions.GalleryViewControl#GalleryViewControl > Grid",
-  "controlStyles[13].styles[0]": "Background:=$t",
-  "styleConstants[0]": "mbg=<AcrylicBrush TintColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" FallbackColor=\"{ThemeResource CardStrokeColorDefaultSolid}\" TintOpacity=\"0.0\" TintLuminosityOpacity=\"1.0\" Opacity=\"1\"/>",
-  "styleConstants[1]": "bcr=10",
-  "styleConstants[2]": "bbb=#13FFFFFF",
-  "styleConstants[3]": "wcr=20",
-  "styleConstants[4]": "mcr=15",
-  "styleConstants[5]": "t=Transparent",
-  "styleConstants[6]": "bb=#20FFFFFF",
-  "styleConstants[7]": "bt=1",
-  "styleConstants[8]": "mbt=#10FFFFFF",
-  "styleConstants[9]": "mbth=#15FFFFFF",
-  "styleConstants[10]": "mbtp=#15FFFFFF",
-  "controlStyles[14].target": "TabViewItem > Grid#LayoutRoot",
-  "controlStyles[14].styles[0]": "CornerRadius=$mcr",
-  "controlStyles[14].styles[1]": "BorderThickness=0",
-  "controlStyles[14].styles[2]": "BorderBrush=$t",
-  "controlStyles[15].target": "Button#CloseButton",
-  "controlStyles[15].styles[0]": "CornerRadius=$bcr",
-  "controlStyles[16].target": "Button#AddButton",
-  "controlStyles[16].styles[0]": "CornerRadius=$bcr",
-  "controlStyles[17].target": "TabViewItem > Grid#LayoutRoot@CommonStates",
-  "controlStyles[17].styles[0]": "Background@Normal:=$t",
-  "controlStyles[17].styles[1]": "Background@PointerOver:=#02FFFFFF",
-  "controlStyles[17].styles[2]": "Background@Selected:=#05FFFFFF",
-  "controlStyles[17].styles[3]": "Background@PointerOverSelected:=$mbth",
-  "controlStyles[17].styles[4]": "Background@PressedSelected:=$mbth",
-  "controlStyles[18].target": "Microsoft.UI.Xaml.Controls.Grid#PART_LayoutRoot",
-  "controlStyles[18].styles[0]": "CornerRadius=14",
-  "controlStyles[18].styles[1]": "BorderBrush:=$bbb",
-  "controlStyles[19].target": "Microsoft.UI.Xaml.Controls.Primitives.ToggleButton#PART_RootChevronButton",
-  "controlStyles[19].styles[0]": "CornerRadius=$bcr",
-  "controlStyles[20].target": "Microsoft.UI.Xaml.Controls.TextBox - TextBox > Microsoft.UI.Xaml.Controls.Grid > Microsoft.UI.Xaml.Controls.Border#BorderElement > Microsoft.UI.Xaml.Controls.ScrollViewer#ContentElement > Microsoft.UI.Xaml.Controls.Border#Root > Microsoft.UI.Xaml.Controls.Grid > Microsoft.UI.Xaml.Controls.ScrollContentPresenter#ScrollContentPresenter > Microsoft.UI.Xaml.Internal.TextBoxView",
-  "controlStyles[20].styles[0]": "RenderTransform:=<TranslateTransform X=\"0\" Y=\"1\" />",
-  "controlStyles[21].target": "Microsoft.UI.Xaml.Controls.Primitives.ToggleButton#PART_RootChevronButton",
-  "controlStyles[21].styles[0]": "CornerRadius=8",
-  "controlStyles[22].target": "Microsoft.UI.Xaml.Controls.AutoSuggestBox#FileExplorerSearchBox > Microsoft.UI.Xaml.Controls.Grid#LayoutRoot > Microsoft.UI.Xaml.Controls.TextBox#TextBox",
-  "controlStyles[22].styles[0]": "Background:=$mbt",
-  "controlStyles[22].styles[1]": "CornerRadius=$mcr",
-  "controlStyles[22].styles[2]": "BorderBrush:=$bbb",
-  "controlStyles[22].styles[3]": "Margin=0,-0.3,0,-0.75",
-  "controlStyles[23].target": "Microsoft.UI.Xaml.Controls.Button#MoreButton > Microsoft.UI.Xaml.Controls.Grid@CommonStates",
-  "controlStyles[23].styles[0]": "CornerRadius@PointerOver:=$bcr",
-  "controlStyles[23].styles[1]": "CornerRadius@Pressed:=$bcr",
-  "controlStyles[24].target": "MenuFlyoutPresenter > Border",
-  "controlStyles[24].styles[0]": "BorderThickness:=$bt",
-  "controlStyles[24].styles[1]": "BorderBrush:=$bb",
-  "controlStyles[24].styles[2]": "CornerRadius:=$mcr",
-  "controlStyles[25].target": "MenuFlyoutPresenter",
-  "controlStyles[25].styles[0]": "BorderThickness:=$bt",
-  "controlStyles[25].styles[1]": "BorderBrush:=$bb",
-  "controlStyles[25].styles[2]": "CornerRadius:=$mcr",
-  "controlStyles[26].target": "Microsoft.UI.Xaml.Controls.Primitives.CommandBarFlyoutCommandBar",
-  "controlStyles[26].styles[0]": "BorderThickness:=$bt",
-  "controlStyles[26].styles[1]": "BorderBrush:=$bb",
-  "controlStyles[26].styles[2]": "CornerRadius:=$mcr",
-  "controlStyles[27].target": "Microsoft.UI.Xaml.Controls.RadioMenuFlyoutItem",
-  "controlStyles[27].styles[0]": "CornerRadius=$bcr",
-  "controlStyles[28].target": "Microsoft.UI.Xaml.Controls.Border#AppBarButtonInnerBorder",
-  "controlStyles[28].styles[0]": "CornerRadius=$bcr",
-  "controlStyles[29].target": "Microsoft.UI.Xaml.Controls.MenuFlyoutItem",
-  "controlStyles[29].styles[0]": "CornerRadius=$bcr",
-  "controlStyles[30].target": "Microsoft.UI.Xaml.Controls.MenuFlyoutSubItem",
-  "controlStyles[30].styles[0]": "CornerRadius=$bcr",
-  "controlStyles[31].target": "ToolTip",
-  "controlStyles[31].styles[0]": "Background:=$mbg",
-  "controlStyles[31].styles[1]": "CornerRadius:=$mcr",
-  "controlStyles[31].styles[2]": "BorderThickness:=$bt",
-  "controlStyles[31].styles[3]": "BorderBrush:=$bb",
-  "controlStyles[32].target": "Microsoft.UI.Xaml.Controls.Primitives.CommandBarFlyoutCommandBar > Grid#LayoutRoot > Grid#OuterContentRoot > Grid#ContentRoot > Grid#PrimaryItemsRoot",
-  "controlStyles[33].target": "ScrollViewer#MenuFlyoutPresenterScrollViewer > Border > Grid > ScrollContentPresenter > ItemsPresenter > StackPanel",
-  "controlStyles[33].styles[0]": "ChildrenTransitions:=<TransitionCollection><EntranceThemeTransition IsStaggeringEnabled=\"True\" FromHorizontalOffset=\"-50\" FromVerticalOffset=\"50\" /></TransitionCollection>",
-  "controlStyles[34].target": "Grid#LayoutRoot",
-  "controlStyles[34].styles[0]": "BackgroundTransition:=<BrushTransition Duration=\"0:0:0.100\" />",
-  "controlStyles[35].target": "Border#BackgroundBorder",
-  "controlStyles[35].styles[0]": "BackgroundTransition:=<BrushTransition Duration=\"0:0:0.100\" />",
-  "controlStyles[36].target": "TabViewItem > Grid#LayoutRoot > Canvas > Microsoft.UI.Xaml.Shapes.Path#SelectedBackgroundPath",
-  "controlStyles[36].styles[0]": "Fill:=$mbt"
-}
+```yaml
+styleConstants:
+  - mbg=<AcrylicBrush TintColor="{ThemeResource CardStrokeColorDefaultSolid}" FallbackColor="{ThemeResource CardStrokeColorDefaultSolid}" TintOpacity="0.0" TintLuminosityOpacity="1.0" Opacity="1"/>
+  - bcr=10
+  - bbb=#13FFFFFF
+  - wcr=20
+  - mcr=15
+  - t=Transparent
+  - bb=#20FFFFFF
+  - bt=1
+  - mbt=#10FFFFFF
+  - mbth=#15FFFFFF
+  - mbtp=#15FFFFFF
+controlStyles:
+  - target: TabViewItem > Grid#LayoutRoot
+    styles:
+      - CornerRadius=10
+  - target: Button#AddButton
+    styles:
+      - RenderTransform:=<TranslateTransform X="0" Y="-1" />
+  - target: Microsoft.UI.Xaml.Controls.Border#BottomBorderLine
+    styles:
+      - Visibility=Collapsed
+  - target: Grid#TabContainerGrid > Border#LeftBottomBorderLine
+    styles:
+      - Visibility=Collapsed
+  - target: Grid#TabContainerGrid > Border#RightBottomBorderLine
+    styles:
+      - Visibility=Collapsed
+  - target: Microsoft.UI.Xaml.Controls.Grid#NavigationBarControlGrid
+    styles:
+      - Background:=$t
+  - target: Microsoft.UI.Xaml.Controls.Grid#PART_LayoutRoot
+    styles:
+      - ''
+  - target: Microsoft.UI.Xaml.Controls.AutoSuggestBox#FileExplorerSearchBox > Microsoft.UI.Xaml.Controls.Grid#LayoutRoot > Microsoft.UI.Xaml.Controls.TextBox#TextBox
+    styles:
+      - ''
+  - target: Microsoft.UI.Xaml.Controls.Grid#CommandBarControlRootGrid
+    styles:
+      - Background:=$t
+      - BorderBrush:=$t
+  - target: Microsoft.UI.Xaml.Controls.CommandBar#FileExplorerCommandBar
+    styles:
+      - Background:=$t
+      - RenderTransform:=<TranslateTransform X="0" Y="-5" />
+      - HorizontalAlignment=Center
+  - target: Microsoft.UI.Xaml.Controls.CommandBar#FileExplorerSecondaryCommandBar > Microsoft.UI.Xaml.Controls.Grid#LayoutRoot > Microsoft.UI.Xaml.Controls.Grid#ContentRoot
+    styles:
+      - Visibility=Collapsed
+  - target: Microsoft.UI.Xaml.Controls.Grid#HomeViewRootGrid
+    styles:
+      - Background:=$t
+  - target: FileExplorerExtensions.GalleryViewControl - GalleryViewControl
+    styles:
+      - Visibility=Collapsed
+  - target: FileExplorerExtensions.GalleryViewControl#GalleryViewControl > Grid
+    styles:
+      - Background:=$t
+  - target: TabViewItem > Grid#LayoutRoot
+    styles:
+      - CornerRadius=$mcr
+      - BorderThickness=0
+      - BorderBrush=$t
+  - target: Button#CloseButton
+    styles:
+      - CornerRadius=$bcr
+  - target: Button#AddButton
+    styles:
+      - CornerRadius=$bcr
+  - target: TabViewItem > Grid#LayoutRoot@CommonStates
+    styles:
+      - Background@Normal:=$t
+      - Background@PointerOver:=#02FFFFFF
+      - Background@Selected:=#05FFFFFF
+      - Background@PointerOverSelected:=$mbth
+      - Background@PressedSelected:=$mbth
+  - target: Microsoft.UI.Xaml.Controls.Grid#PART_LayoutRoot
+    styles:
+      - CornerRadius=14
+      - BorderBrush:=$bbb
+  - target: Microsoft.UI.Xaml.Controls.Primitives.ToggleButton#PART_RootChevronButton
+    styles:
+      - CornerRadius=$bcr
+  - target: Microsoft.UI.Xaml.Controls.TextBox - TextBox > Microsoft.UI.Xaml.Controls.Grid > Microsoft.UI.Xaml.Controls.Border#BorderElement > Microsoft.UI.Xaml.Controls.ScrollViewer#ContentElement > Microsoft.UI.Xaml.Controls.Border#Root > Microsoft.UI.Xaml.Controls.Grid > Microsoft.UI.Xaml.Controls.ScrollContentPresenter#ScrollContentPresenter > Microsoft.UI.Xaml.Internal.TextBoxView
+    styles:
+      - RenderTransform:=<TranslateTransform X="0" Y="1" />
+  - target: Microsoft.UI.Xaml.Controls.Primitives.ToggleButton#PART_RootChevronButton
+    styles:
+      - CornerRadius=8
+  - target: Microsoft.UI.Xaml.Controls.AutoSuggestBox#FileExplorerSearchBox > Microsoft.UI.Xaml.Controls.Grid#LayoutRoot > Microsoft.UI.Xaml.Controls.TextBox#TextBox
+    styles:
+      - Background:=$mbt
+      - CornerRadius=$mcr
+      - BorderBrush:=$bbb
+      - Margin=0,-0.3,0,-0.75
+  - target: Microsoft.UI.Xaml.Controls.Button#MoreButton > Microsoft.UI.Xaml.Controls.Grid@CommonStates
+    styles:
+      - CornerRadius@PointerOver:=$bcr
+      - CornerRadius@Pressed:=$bcr
+  - target: MenuFlyoutPresenter > Border
+    styles:
+      - BorderThickness:=$bt
+      - BorderBrush:=$bb
+      - CornerRadius:=$mcr
+  - target: MenuFlyoutPresenter
+    styles:
+      - BorderThickness:=$bt
+      - BorderBrush:=$bb
+      - CornerRadius:=$mcr
+  - target: Microsoft.UI.Xaml.Controls.Primitives.CommandBarFlyoutCommandBar
+    styles:
+      - BorderThickness:=$bt
+      - BorderBrush:=$bb
+      - CornerRadius:=$mcr
+  - target: Microsoft.UI.Xaml.Controls.RadioMenuFlyoutItem
+    styles:
+      - CornerRadius=$bcr
+  - target: Microsoft.UI.Xaml.Controls.Border#AppBarButtonInnerBorder
+    styles:
+      - CornerRadius=$bcr
+  - target: Microsoft.UI.Xaml.Controls.MenuFlyoutItem
+    styles:
+      - CornerRadius=$bcr
+  - target: Microsoft.UI.Xaml.Controls.MenuFlyoutSubItem
+    styles:
+      - CornerRadius=$bcr
+  - target: ToolTip
+    styles:
+      - Background:=$mbg
+      - CornerRadius:=$mcr
+      - BorderThickness:=$bt
+      - BorderBrush:=$bb
+  - target: Microsoft.UI.Xaml.Controls.Primitives.CommandBarFlyoutCommandBar > Grid#LayoutRoot > Grid#OuterContentRoot > Grid#ContentRoot > Grid#PrimaryItemsRoot
+    styles:
+      - ''
+  - target: ScrollViewer#MenuFlyoutPresenterScrollViewer > Border > Grid > ScrollContentPresenter > ItemsPresenter > StackPanel
+    styles:
+      - ChildrenTransitions:=<TransitionCollection><EntranceThemeTransition IsStaggeringEnabled="True" FromHorizontalOffset="-50" FromVerticalOffset="50" /></TransitionCollection>
+  - target: Grid#LayoutRoot
+    styles:
+      - BackgroundTransition:=<BrushTransition Duration="0:0:0.100" />
+  - target: Border#BackgroundBorder
+    styles:
+      - BackgroundTransition:=<BrushTransition Duration="0:0:0.100" />
+  - target: TabViewItem > Grid#LayoutRoot > Canvas > Microsoft.UI.Xaml.Shapes.Path#SelectedBackgroundPath
+    styles:
+      - Fill:=$mbt
 ```
 
 </details>
