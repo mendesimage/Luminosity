@@ -38,18 +38,6 @@ I didn't know how to fix these. I couldn't find the correct target names, or I'm
 
 ---
 
-## Full Luminosity Theme
-
-For that, download the listed mods and select "**Luminosity**" on each.
-- Windows 11 Taskbar Styler
-- Windows 11 Start Menu Styler
-- Windows 11 Notification Center Styler
-- Windows 11 File Explorer Styler
-
-I also highly recommend **Translucent Windows** with **Mica** or **MicaAlt** selected as backdrop.
-
----
-
 ## Manual installation
 
 The theme styles can also be imported manually. To do that, follow these steps:
