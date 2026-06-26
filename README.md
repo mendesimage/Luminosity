@@ -158,7 +158,7 @@ It's meant to work well on dark windows, with **Mica** or **MicaAlt** backdrops,
 
 # Themes
 
-## Shared Guides
+## 💻 Shared Guides
 <details>
 <summary>(click to expand)</summary>
 
@@ -2234,10 +2234,10 @@ To apply backdrops from other themes, replace the content after `mbg=`, keeping 
 ## **🔔 Notification Center** | **0.1.1** | 🔧 Work in Progress
 
 <details>
-<summary>template</summary>
+<summary>(click to expand)</summary>
 
   <details>
-  <summary>template</summary>
+  <summary>Changelog</summary>
   
   **Added**
 
@@ -2504,10 +2504,10 @@ To apply backdrops from other themes, replace the content after `mbg=`, keeping 
 ## **📁 File Explorer** | **0.1.1** | ⚠️ Heavy Work in Progress 
 
 <details>
-<summary>template</summary>
+<summary>(click to expand)</summary>
 
   <details>
-  <summary>template</summary>
+  <summary>Changelog</summary>
 
   **Added**
 
