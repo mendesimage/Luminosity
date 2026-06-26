@@ -101,6 +101,7 @@ I belive the taskbar is in its best state at the moment, so I'll shift to other 
 - [ ]  Add Fluid's Animations to many items
 - [ ]  Better, optional look for non-Translucent Windows users
 - [ ]  Hopefully change Right-Click menus background (low hopes on this one)
+</details>
 
 ---
 
@@ -147,7 +148,6 @@ To apply the theme, you will need:
 
 # Introduction
 
-![demo](demo.png)
 ![explorer](explorer.png)
 
 **Luminosity** is inspired from Windows's native Acrylic, using the maximum `TintLuminosityOpacity` value as its backdrop and more rounded UI elements.
