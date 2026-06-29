@@ -7,6 +7,8 @@ While the themes have been tested, they are not final. Expect issues, unfinished
 
 Theme `yaml` is up to date, but README information likely isn't!
 
+**CONTENT IN FOLDERS ARE OUTDATED**
+
 ![demo](demo.png)
 
 ## ✨ Main `README` Rewrite ✨
@@ -89,7 +91,7 @@ I belive the taskbar is in its best state at the moment, so I'll shift to other 
   - [ ]  Category > Category Folder > Scroll not working
 
 ### Notification Center
-- [ ]  Fix notification banner styling (new Windows update broke it)
+- [x]  Fix notification banner styling (new Windows update broke it)
 - [ ]  Add Fluid's animations
 - [ ]  Media transporter too big on smaller resolutions
 - [ ]  Focus session icons offset vertically
@@ -106,12 +108,9 @@ I belive the taskbar is in its best state at the moment, so I'll shift to other 
 ---
 
 ## Credits
-<details>
-<summary>(click to expand)</summary>
 
 - [WindowGlass](https://github.com/Nathaniel4JC/Windows-11-Taskbar-Styler/tree/main/Themes/WindowGlass) - A few targets
-- [Fluid](https://github.com/ramensoftware/windows-11-start-menu-styling-guide/tree/main/Themes/Fluid) - Right-Click and mouse hovering animations.
-</details>
+- [Fluid](https://github.com/ramensoftware/windows-11-start-menu-styling-guide/tree/main/Themes/Fluid) - Right-Click animations and `@CommonStates` effects
 
 ---
 
@@ -2401,6 +2400,15 @@ To apply backdrops from other themes, replace the content after `mbg=`, keeping 
     - target: Border#ToastBackgroundBorder2
       styles:
         - Background:=$mbg
+        - BorderThickness=$bt
+        - BorderBrush:=$bb
+        - CornerRadius=$wcr
+        - Shadow:=
+    - target: Border#ToastBackgroundBorder
+      styles:
+        - Background:=$mbg
+        - BorderThickness=$bt
+        - BorderBrush:=$bb
         - CornerRadius=$wcr
         - Shadow:=
     - target: Windows.UI.Xaml.Controls.ToolTip > Windows.UI.Xaml.Controls.ContentPresenter#LayoutRoot
