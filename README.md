@@ -163,7 +163,7 @@ It's meant to work well on dark windows, with **Mica** or **MicaAlt** backdrops,
 
   ### Custom Menu Animation Settings
   <details>
-  <summary>(click to expand)</summary>
+  <summary>(click to expand guide)</summary>
 
   To customize the animations, look for this style constant:
   ```
@@ -177,11 +177,9 @@ It's meant to work well on dark windows, with **Mica** or **MicaAlt** backdrops,
     - Vertical **Positive** values is **Down**, **Negative** is **Up**.
   </details>
 
-  ---
-
   ### Backgrounds Guide (Work in Progress)
   <details>
-  <summary>(click to expand)</summary>
+  <summary>(click to expand guide)</summary>
 
   To customize the background, locate one of these lines depending on your version:
 
@@ -214,7 +212,6 @@ It's meant to work well on dark windows, with **Mica** or **MicaAlt** backdrops,
 
   To apply backdrops from other themes, replace the content after `mbg=`, keeping the quote and comma at the end (",).
   </details>
-
 </details>
 
 ---
