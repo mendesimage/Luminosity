@@ -65,7 +65,7 @@ Choose the version `0.3`! should also be compatible with the old Start Menu and 
 <details>
 <summary>(click to expand)</summary>
 
-Here's a draft roadmap of some thing I want to do. They won't be finidone in order! Some ideas are still theoretical/experimental and might not even be possible because of unknown limitations.
+This is a draft roadmap of some things I want to do. They won't be done in order! Some ideas are still theoretical/experimental and might not be possible because of unknown limitations.
 
 ### Documentation
 - [x]  Single-page `README`
@@ -161,59 +161,60 @@ It's meant to work well on dark windows, with **Mica** or **MicaAlt** backdrops,
 <details>
 <summary>(click to expand)</summary>
 
-### Custom Menu Animation Settings
+  ### Custom Menu Animation Settings
+  <details>
+  <summary>(click to expand)</summary>
 
-Follow this guide to customize the animation behavior.
+  To customize the animations, look for this style constant:
+  ```
+  AnimationSettings=IsStaggeringEnabled="True" FromHorizontalOffset="-50" FromVerticalOffset="50"
+  ```
 
-<details>
-<summary>(Click to expand guide)</summary>
+  - For all items to display immediately, set `IsStaggeringEnabled=` from `"True"` to `"False"`.
 
-To customize the animations, look for this style constant:
-```
-AnimationSettings=IsStaggeringEnabled="True" FromHorizontalOffset="-50" FromVerticalOffset="50"
-```
+  - `FromHorizontalOffset` and `FromVerticalOffset` are the directions where the items come from.
+    - Horizontal **Positive** values is **Right**, **Negative** is **Left**.
+    - Vertical **Positive** values is **Down**, **Negative** is **Up**.
+  </details>
 
-- For all items to display immediately, set `IsStaggeringEnabled=` from `"True"` to `"False"`.
+  ---
 
-- `FromHorizontalOffset` and `FromVerticalOffset` are the directions where the items come from.
-  - Horizontal **Positive** values is **Right**, **Negative** is **Left**.
-  - Vertical **Positive** values is **Down**, **Negative** is **Up**.
-</details>
+  ### Backgrounds Guide (Work in Progress)
+  <details>
+  <summary>(click to expand)</summary>
 
----
+  To customize the background, locate one of these lines depending on your version:
 
-### Backgrounds Guide (Work in Progress)
+  **Old Background** (in case you want, but has issues)
 
-To customize the background, locate one of these lines depending on your version:
+  ```yaml
+  mbg=<AcrylicBrush TintColor="{ThemeResource CardStrokeColorDefaultSolid}" FallbackColor="{ThemeResource CardStrokeColorDefaultSolid}" TintOpacity="0.0" TintLuminosityOpacity="1.0" Opacity="1"/>
+  ```
 
-**Old Background** (in case you want, but has issues)
-
-```yaml
-mbg=<AcrylicBrush TintColor="{ThemeResource CardStrokeColorDefaultSolid}" FallbackColor="{ThemeResource CardStrokeColorDefaultSolid}" TintOpacity="0.0" TintLuminosityOpacity="1.0" Opacity="1"/>
-```
-
-**New Background**
-  
-```yaml
-  - mbg=<WindhawkBlur BlurAmount="30" TintColor="{ThemeResource CardStrokeColorDefaultSolid}" TintOpacity="0.0" TintLuminosityOpacity="1.0" TintSaturation="1.0" NoiseDensity="1.0" NoiseOpacity="0.1" />
-```
-
-
-**Parameters Explanation**
-
-- `TintColor`: Can be a valid `ThemeResource`, hex color in #AARRGGBB or #RRGGBB format that is applied to the blur.
-- `TintOpacity`: Opacity of the `TintColor`, overrides the alpha of TintColor.
-- `TintLuminosityOpacity`: Lowering this value makes it more transparent. Range: 0.0 to 1.0.
-  
-- `BlurAmount`: Radius of blur effect (set to 30 to mimic Acrylic).
-- `TintSaturation`: Controls the saturation of the blurred content. 1.0 is unchanged, 0.0 is fully desaturated (grayscale).
-- `NoiseOpacity`: Adds a procedural noise texture overlay. Controls how visible the noise is (0.0 to 1.0).
-- `NoiseDensity`: Controls the granularity of the noise texture (defaults to 1.0).
-
-[Official Documentation](https://github.com/ramensoftware/windows-11-taskbar-styling-guide/tree/main?tab=readme-ov-file#windhawkblur-effect-as-color)
+  **New Background**
+    
+  ```yaml
+    - mbg=<WindhawkBlur BlurAmount="30" TintColor="{ThemeResource CardStrokeColorDefaultSolid}" TintOpacity="0.0" TintLuminosityOpacity="1.0" TintSaturation="1.0" NoiseDensity="1.0" NoiseOpacity="0.1" />
+  ```
 
 
-To apply backdrops from other themes, replace the content after `mbg=`, keeping the quote and comma at the end (",).
+  **Parameters Explanation**
+
+  - `TintColor`: Can be a valid `ThemeResource`, hex color in #AARRGGBB or #RRGGBB format that is applied to the blur.
+  - `TintOpacity`: Opacity of the `TintColor`, overrides the alpha of TintColor.
+  - `TintLuminosityOpacity`: Lowering this value makes it more transparent. Range: 0.0 to 1.0.
+    
+  - `BlurAmount`: Radius of blur effect (set to 30 to mimic Acrylic).
+  - `TintSaturation`: Controls the saturation of the blurred content. 1.0 is unchanged, 0.0 is fully desaturated (grayscale).
+  - `NoiseOpacity`: Adds a procedural noise texture overlay. Controls how visible the noise is (0.0 to 1.0).
+  - `NoiseDensity`: Controls the granularity of the noise texture (defaults to 1.0).
+
+  [Official Documentation](https://github.com/ramensoftware/windows-11-taskbar-styling-guide/tree/main?tab=readme-ov-file#windhawkblur-effect-as-color)
+
+
+  To apply backdrops from other themes, replace the content after `mbg=`, keeping the quote and comma at the end (",).
+  </details>
+
 </details>
 
 ---
