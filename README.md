@@ -7,15 +7,11 @@ While the themes have been tested, they are not final. Expect issues, unfinished
 
 Theme `yaml` is up to date, but README information likely isn't!
 
-**CONTENT IN FOLDERS ARE OUTDATED**
-
 ![demo](screenshots/demo.png)
 
 ## ✨ Main `README` Rewrite ✨
 
 The main `README.md` has been rewritten to make the entire theme available on a single page! Configs for each styler now have its own toggle; just scroll down and find what you need. No more jumping in and out of folders! (I hated that.) **Currently have some missing, outdated and inconsistent documentation**, I'll improve it as I update the themes.
-
-Old files might remain for a while as I'll need some for future information update here.
 
 ### Main Changes:
 
