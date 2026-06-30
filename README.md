@@ -9,7 +9,7 @@ Theme `yaml` is up to date, but README information likely isn't!
 
 **CONTENT IN FOLDERS ARE OUTDATED**
 
-![demo](demo.png)
+![demo](screenshots/demo.png)
 
 ## ✨ Main `README` Rewrite ✨
 
@@ -147,7 +147,7 @@ To apply the theme, you will need:
 
 # Introduction
 
-![explorer](explorer.png)
+![explorer](screenshots/explorer.png)
 
 **Luminosity** is inspired from Windows's native Acrylic, using the maximum `TintLuminosityOpacity` value as its backdrop and more rounded UI elements.
 
@@ -239,19 +239,19 @@ It's meant to work well on dark windows, with **Mica** or **MicaAlt** backdrops,
 
   ### Dock
 
-  ![Dock](dock.png)
+  ![Dock](screenshots/dock.png)
 
   - Docks are cool.
 
   ### Classic
 
-  ![Classic](classic.png)
+  ![Classic](screenshots/classic.png)
 
   - Meant to cause minimal disruption for users who prefer the classic Taskbar placement.
 
   ### Compact
 
-  ![Compact](compact.png)
+  ![Compact](screenshots/compact.png)
 
   - Meant to be used with **Taskbar Labels for Windows 11**, using the **Centered Running Indicator** style, and **Taskbar Clock Customization**. Otherwise, you will experience visual issues.
 
@@ -392,19 +392,19 @@ It's meant to work well on dark windows, with **Mica** or **MicaAlt** backdrops,
   <details>
   <summary>Screenshots (Click to expand)</summary>
 
-    ![Alt+Tab](alttab.png)
+    ![Alt+Tab](screenshots/alttab.png)
 
 
-    ![Task View](taskview.png)
+    ![Task View](screenshots/taskview.png)
 
 
-    ![Virtual Desktops Bar](virtualdesktopsbar.png)
+    ![Virtual Desktops Bar](screenshots/virtualdesktopsbar.png)
 
 
-    ![Window Preview Flyout](wpf.png)
+    ![Window Preview Flyout](screenshots/wpf.png)
 
 
-    ![Menus](menu.png)
+    ![Menus](screenshots/menu.png)
 
   </details>
 
@@ -2250,7 +2250,7 @@ It's meant to work well on dark windows, with **Mica** or **MicaAlt** backdrops,
 
   ---
 
-  ![MediaControlCenter](mediacontrolcenter.png)
+  ![MediaControlCenter](screenshots/mediacontrolcenter.png)
 
   ---
 
@@ -2524,7 +2524,7 @@ It's meant to work well on dark windows, with **Mica** or **MicaAlt** backdrops,
   - Infinite Issues
   </details>
 
-  ![explorer](explorer.png)
+  ![explorer](screenshots/explorer.png)
 
   ---
 
