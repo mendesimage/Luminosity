@@ -177,6 +177,8 @@ It's meant to work well on dark windows, with **Mica** or **MicaAlt** backdrops,
     - Vertical **Positive** values is **Down**, **Negative** is **Up**.
   </details>
 
+  &nbsp;
+
   ### Backgrounds Guide (Work in Progress)
   <details>
   <summary>(click to expand guide)</summary>
@@ -195,7 +197,6 @@ It's meant to work well on dark windows, with **Mica** or **MicaAlt** backdrops,
     - mbg=<WindhawkBlur BlurAmount="30" TintColor="{ThemeResource CardStrokeColorDefaultSolid}" TintOpacity="0.0" TintLuminosityOpacity="1.0" TintSaturation="1.0" NoiseDensity="1.0" NoiseOpacity="0.1" />
   ```
 
-
   **Parameters Explanation**
 
   - `TintColor`: Can be a valid `ThemeResource`, hex color in #AARRGGBB or #RRGGBB format that is applied to the blur.
@@ -210,11 +211,11 @@ It's meant to work well on dark windows, with **Mica** or **MicaAlt** backdrops,
   [Official Documentation](https://github.com/ramensoftware/windows-11-taskbar-styling-guide/tree/main?tab=readme-ov-file#windhawkblur-effect-as-color)
 
 
-  To apply backdrops from other themes, replace the content after `mbg=`, keeping the quote and comma at the end (",).
+  To apply backdrops from other themes, replace the content after `mbg=`.
   </details>
 </details>
 
----
+&nbsp;
 
 ## **🍫 Taskbar** | **1.2.1** | ✅ Working Fine
 
@@ -255,6 +256,8 @@ It's meant to work well on dark windows, with **Mica** or **MicaAlt** backdrops,
 
   - Meant to be used with **Taskbar Labels for Windows 11**, using the **Centered Running Indicator** style, and **Taskbar Clock Customization**. Otherwise, you will experience visual issues.
 
+  ---
+
   ### Mods Guide
 
   To apply the same settings as mine, follow these steps:
@@ -288,6 +291,8 @@ It's meant to work well on dark windows, with **Mica** or **MicaAlt** backdrops,
   labelForMultipleItems: '[%amount%] %name%'
   ```
   </details>
+
+  &nbsp;
 
   **Taskbar Clock Customization**
   <details>
@@ -362,6 +367,8 @@ It's meant to work well on dark windows, with **Mica** or **MicaAlt** backdrops,
   ```
   </details>
 
+  &nbsp;
+
   ---
 
   ## General Information
@@ -392,22 +399,23 @@ It's meant to work well on dark windows, with **Mica** or **MicaAlt** backdrops,
   <details>
   <summary>Screenshots (Click to expand)</summary>
 
-    ![Alt+Tab](screenshots/alttab.png)
+![Alt+Tab](screenshots/alttab.png)
 
 
-    ![Task View](screenshots/taskview.png)
+![Task View](screenshots/taskview.png)
 
 
-    ![Virtual Desktops Bar](screenshots/virtualdesktopsbar.png)
+![Virtual Desktops Bar](screenshots/virtualdesktopsbar.png)
 
 
-    ![Window Preview Flyout](screenshots/wpf.png)
+![Window Preview Flyout](screenshots/wpf.png)
 
 
-    ![Menus](screenshots/menu.png)
+![Menus](screenshots/menu.png)
 
   </details>
 
+  ---
 
   ## Guides
 
@@ -436,7 +444,7 @@ It's meant to work well on dark windows, with **Mica** or **MicaAlt** backdrops,
 
   Example: `DockMargin=5`
 
-  ---
+  &nbsp;
 
   ## 2. Background alignment fix
 
@@ -451,7 +459,7 @@ It's meant to work well on dark windows, with **Mica** or **MicaAlt** backdrops,
   Then: `DockMarginFix=10`
   </details>
 
-  ---
+  &nbsp;
 
   ### Disabling Dock Top Gap
 
@@ -468,7 +476,7 @@ It's meant to work well on dark windows, with **Mica** or **MicaAlt** backdrops,
   ```
   </details>
 
-  ---
+  &nbsp;
 
   ### Left Taskbar Alignment Fix
 
@@ -482,7 +490,7 @@ It's meant to work well on dark windows, with **Mica** or **MicaAlt** backdrops,
   **Note:** The **Classic** variant is compatible by default.
   </details>
 
-  ---
+  &nbsp;
 
   ### Taskbar height and icon size Compatibility
 
@@ -498,8 +506,9 @@ It's meant to work well on dark windows, with **Mica** or **MicaAlt** backdrops,
       styles:
         - Height=$DockHeight
   ```
-
   </details>
+
+  &nbsp;
 
   ---
 
@@ -848,7 +857,7 @@ It's meant to work well on dark windows, with **Mica** or **MicaAlt** backdrops,
   ```
   </details>
 
-  ---
+  &nbsp;
 
   ### Classic
 
@@ -1124,7 +1133,7 @@ It's meant to work well on dark windows, with **Mica** or **MicaAlt** backdrops,
   ```
   </details>
 
-  ---
+  &nbsp;
 
   ### Compact
 
@@ -1445,8 +1454,7 @@ It's meant to work well on dark windows, with **Mica** or **MicaAlt** backdrops,
   </details>
 </details>
 
-
----
+&nbsp;
 
 ## **🪟 Start Menu** | **0.2.2 / 0.3 Early Access** | 🔧 Work in Progress
 
@@ -1465,8 +1473,8 @@ It's meant to work well on dark windows, with **Mica** or **MicaAlt** backdrops,
   - Many 🤓 (Work in Progres)
   </details>
 
-  > [!IMPORTANT]
-  > Development for the [redesigned Windows 11 Start menu](https://microsoft.design/articles/start-fresh-redesigning-windows-start-menu/) just started! Available in the version 0.3 at the end of the page.
+> [!IMPORTANT]
+> Development for the [redesigned Windows 11 Start menu](https://microsoft.design/articles/start-fresh-redesigning-windows-start-menu/) just started! Available in the version 0.3 at the end of the page.
 
   ---
 
@@ -2225,8 +2233,7 @@ It's meant to work well on dark windows, with **Mica** or **MicaAlt** backdrops,
   </details>
 </details>
 
-
----
+&nbsp;
 
 ## **🔔 Notification Center** | **0.1.1** | 🔧 Work in Progress
 
@@ -2505,7 +2512,7 @@ It's meant to work well on dark windows, with **Mica** or **MicaAlt** backdrops,
   </details>
 </details>
 
----
+&nbsp;
 
 ## **📁 File Explorer** | **0.1.1** | ⚠️ Heavy Work in Progress 
 
