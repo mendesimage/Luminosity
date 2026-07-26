@@ -2510,7 +2510,7 @@ It's meant to work well on dark windows, with **Mica** or **MicaAlt** backdrops,
 
 &nbsp;
 
-## **📁 File Explorer** | **0.1.1** | ⚠️ Heavy Work in Progress 
+## **📁 File Explorer** | **0.1.2** | ⚠️ Heavy Work in Progress 
 
 <details>
 <summary>(click to expand)</summary>
@@ -2520,11 +2520,19 @@ It's meant to work well on dark windows, with **Mica** or **MicaAlt** backdrops,
 
   **Added**
 
-  - Many styles.
+  - Command bar separator.
+  - Command bar separator and Home tab transparency guides.
+  - Some Home tab background styling.
+
+  **Fixed**
+
+  - Home tab transparency was removed due to issues with other tabs' contents appearing behind Home contents in some situations.
 
   **Known Issues**
 
+  - No Home and Gallery transparency
   - Infinite Issues
+
   </details>
 
   ![explorer](screenshots/explorer.png)
@@ -2534,6 +2542,74 @@ It's meant to work well on dark windows, with **Mica** or **MicaAlt** backdrops,
   ## General Information
 
   [Work in Progress]
+
+  ---
+
+  ## Guides
+
+  ### Disable Command Bar Separator
+
+  <details>
+  <summary>Click to expand guide</summary>
+
+  To disable the command bar separator, change `CommandBarDivider` from `1` to `0`.
+
+  Like this: `CommandBarDivider=0`
+
+  </details>
+
+  &nbsp;
+
+  ### Home Tab Transparency
+
+  **Note:** Home tab transparency was removed due to issues with other tabs' contents appearing behind Home contents in some situations. If you still want to enable it, follow the guide below.
+
+  Alternatively, if you don't use Home tab features, you can set "**Open File Explorer to**" to `This PC` in File Explorer's settings, which is fully transparent.
+
+  <details>
+  <summary>Click to expand guide</summary>
+
+  To re-enable Home tab transparency, you can either edit the content manually or add it through the UI settings.
+
+  **Option 1**
+
+  Add these lines at the very end of the content:
+
+  ```yaml
+    - target: Microsoft.UI.Xaml.Controls.Grid#HomeViewRootGrid
+      styles:
+        - Background:=$t
+  ```
+
+  <details>
+  <summary>Example</summary>
+  
+  ![option_1_fe_guide_example](screenshots/option_1_fe_guide_example.png)
+
+  </details>
+
+  &nbsp;
+
+  **Option 2**
+
+  1. Open **Windows 11 File Explorer Styler** settings and scroll to the bottom.
+  2. Above **Resource variables**, click **Add new item**.
+  3. Set **Target** to:
+  `Microsoft.UI.Xaml.Controls.Grid#HomeViewRootGrid`
+  4. Set **Styles** to:
+  `Background:=$t`
+  5. Click **Save settings** at the top.
+
+  <details>
+  <summary>Example</summary>
+
+![option_2_fe_guide_example](screenshots/option_2_fe_guide_example.png)
+  
+  </details>
+
+  </details>
+
+  &nbsp;
 
   ---
 
@@ -2562,6 +2638,7 @@ It's meant to work well on dark windows, with **Mica** or **MicaAlt** backdrops,
 
   ```yaml
   styleConstants:
+    - CommandBarDivider=1
     - mbg=<AcrylicBrush TintColor="{ThemeResource CardStrokeColorDefaultSolid}" FallbackColor="{ThemeResource CardStrokeColorDefaultSolid}" TintOpacity="0.0" TintLuminosityOpacity="1.0" Opacity="1"/>
     - bcr=10
     - bbb=#13FFFFFF
@@ -2601,7 +2678,8 @@ It's meant to work well on dark windows, with **Mica** or **MicaAlt** backdrops,
     - target: Microsoft.UI.Xaml.Controls.Grid#CommandBarControlRootGrid
       styles:
         - Background:=$t
-        - BorderBrush:=$t
+        - BorderBrush:=$bb
+        - BorderThickness=0,0,0,$CommandBarDivider
     - target: Microsoft.UI.Xaml.Controls.CommandBar#FileExplorerCommandBar
       styles:
         - Background:=$t
@@ -2612,7 +2690,8 @@ It's meant to work well on dark windows, with **Mica** or **MicaAlt** backdrops,
         - Visibility=Collapsed
     - target: Microsoft.UI.Xaml.Controls.Grid#HomeViewRootGrid
       styles:
-        - Background:=$t
+        - CornerRadius=0,0,$mcr,0
+        - Margin=0,0,8,8
     - target: FileExplorerExtensions.GalleryViewControl - GalleryViewControl
       styles:
         - Visibility=Collapsed
