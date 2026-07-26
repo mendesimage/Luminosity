@@ -2510,7 +2510,7 @@ It's meant to work well on dark windows, with **Mica** or **MicaAlt** backdrops,
 
 &nbsp;
 
-## **📁 File Explorer** | **0.1.2** | ⚠️ Heavy Work in Progress 
+## **📁 File Explorer** | **0.1.3** | ⚠️ Heavy Work in Progress 
 
 <details>
 <summary>(click to expand)</summary>
@@ -2520,13 +2520,13 @@ It's meant to work well on dark windows, with **Mica** or **MicaAlt** backdrops,
 
   **Added**
 
-  - Command bar separator.
-  - Command bar separator and Home tab transparency guides.
-  - Some Home tab background styling.
+  - Command bar separator. (0.1.2)
+  - Command bar separator and Home tab transparency guides. (0.1.2)
 
   **Fixed**
 
-  - Home tab transparency was removed due to issues with other tabs' contents appearing behind Home contents in some situations.
+  - Home tab transparency was removed due to issues with other tabs' contents appearing behind Home contents in some situations. (0.1.2)
+  - Removed previous `0.1.2` Home background styling having the same issue.
 
   **Known Issues**
 
@@ -2690,8 +2690,7 @@ It's meant to work well on dark windows, with **Mica** or **MicaAlt** backdrops,
         - Visibility=Collapsed
     - target: Microsoft.UI.Xaml.Controls.Grid#HomeViewRootGrid
       styles:
-        - CornerRadius=0,0,$mcr,0
-        - Margin=0,0,8,8
+        - CornerRadius=0
     - target: FileExplorerExtensions.GalleryViewControl - GalleryViewControl
       styles:
         - Visibility=Collapsed
